@@ -13,12 +13,12 @@ public class RuleBuilder {
         return new RuleBuilder(condition);
     }
 
-    public RuleBuilder setName(String name) {
+    public RuleBuilder named(String name) {
         this.name = name;
         return this;
     }
 
-    public RuleBuilder setDescription(String description) {
+    public RuleBuilder withDescription(String description) {
         this.description = description;
         return this;
     }
