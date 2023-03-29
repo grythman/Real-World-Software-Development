@@ -2,11 +2,8 @@ package com.iteratrlearning.shu_book.chapter_06.database;
 
 import com.iteratrlearning.shu_book.chapter_06.*;
 
-import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Optional;
 import java.util.Set;
 import java.util.function.Consumer;
@@ -83,16 +80,6 @@ public class DatabaseTwootRepository implements TwootRepository {
                 stmt.executeUpdate();
             });
     }
-
-    // tag::usersTupleLoop[]
-    private String usersTupleLoop(final Set<String> following) {
-        List<String> quotedIds = new ArrayList<>();
-        for (String id : following) {
-            quotedIds.add("'" + id + "'");
-        }
-        return '(' + String.join(",", quotedIds) + ')';
-    }
-    // end::usersTupleLoop[]
 
     // tag::usersTuple[]
     private String usersTuple(final Set<String> following) {

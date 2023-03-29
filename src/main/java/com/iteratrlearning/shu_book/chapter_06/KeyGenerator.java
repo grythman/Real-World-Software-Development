@@ -3,7 +3,6 @@ package com.iteratrlearning.shu_book.chapter_06;
 import org.bouncycastle.crypto.generators.SCrypt;
 
 import java.security.SecureRandom;
-import java.util.concurrent.ThreadLocalRandom;
 
 import static java.nio.charset.StandardCharsets.UTF_16;
 
